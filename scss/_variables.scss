@@ -1,0 +1,13 @@
+// for media queries, you can make variables that contain the minimum and max screen sizes of different devices such as mobile, tablet, laptop, desktop, and more
+
+// for this example, the values are just estimates
+
+// Different devices
+$mobile-max: 480px;
+$tablet-min: 481px;
+$tablet-max: 800px;
+$laptop-min: 800px;
+$laptop-max: 1150px;
+$desktop-min: 1151px;
+$desktop-max: 1400px;
+

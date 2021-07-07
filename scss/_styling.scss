@@ -31,27 +31,35 @@
 }
 
 // MEDIA QUERIES HERE //
-// max-width or min-width refers to the window size of the browser screen
-// for max-width, anytime the screen size is less than the value given, then it will modify the content in the media query
-// for min-width, anytime the screen size is more than the value given, then it will modify the content in the media query
-// for min-width and max-width, anytime the screen size id within those boundaries, it will modify the content in the media query
-
-// in these examples .main is used to refer to .main from earlier in the scss, and flex-diection: column is modifying the flex-direction value from prior
+// 
 
 @media screen and (max-width: 900px) {
     .main {
         flex-direction: column;
     }
-    .second-subsection {
-        color: white;
-    }
-
-    .third-subsection {
-        color: white;
+}
+@media screen and (min-width: $desktop-min) and (max-width: $desktop-max){
+    .main {
+        background-color: red;
     }
 }
-@media screen and (min-width: 600px) and (max-width: 800px){
+@media screen and (min-width: $laptop-max) and (max-width: $desktop-min){
     .main {
-        background-color: black;
+        background-color: orange;
+    }
+}
+@media screen and (min-width: $tablet-min) and (max-width: $laptop-max){
+    .main {
+        background-color: yellow;
+    }
+}
+@media screen and (min-width: $mobile-max) and (max-width: $tablet-min){
+    .main {
+        background-color: green;
+    }
+}
+@media screen and (max-width: $mobile-max){
+    .main {
+        background-color: blue;
     }
 }
