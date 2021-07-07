@@ -40,31 +40,34 @@
   text-align: center;
 }
 
-@media screen and (min-width: desktop-min) and (max-width: desktop-max) {
+@media screen and (max-width: 900px) {
+  .main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1151px) and (max-width: 2000px) {
   .main {
     background-color: red;
   }
 }
 
-@media screen and (min-width: laptop-max) and (max-width: desktop-min) {
+@media screen and (min-width: 800px) and (max-width: 1150px) {
   .main {
-    background-color: orange;
+    background-color: gold;
   }
 }
 
-@media screen and (min-width: tablet-min) and (max-width: laptop-max) {
-  .main {
-    background-color: yellow;
-  }
-}
-
-@media screen and (min-width: mobile-max) and (max-width: tablet-min) {
+@media screen and (min-width: 481px) and (max-width: 799px) {
   .main {
     background-color: green;
   }
 }
 
-@media screen and (max-width: mobile-max) {
+@media screen and (max-width: 480px) {
   .main {
     background-color: blue;
   }
