@@ -1,1 +1,77 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+.main {
+  width: 100%;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.first-subsection {
+  font-size: 3rem;
+  padding: 2rem;
+  margin: 1rem;
+  background-color: aqua;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.second-subsection {
+  font-size: 3rem;
+  padding: 2rem;
+  margin: 1rem;
+  background-color: orange;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.third-subsection {
+  font-size: 3rem;
+  padding: 2rem;
+  margin: 1rem;
+  background-color: pink;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+  .main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .second-subsection {
+    color: white;
+  }
+  .third-subsection {
+    color: white;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 800px) {
+  .main {
+    background-color: black;
+  }
+}
+
+html,
+body,
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+html {
+  min-height: 100%;
+}
+/*# sourceMappingURL=main.css.map */
